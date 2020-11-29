@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>work02</title>
+    <style type="text/css">
+        *{
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+        .wrap{
+            height: 100vh;
+            /* 百分百視窗高度 */
+            display: flex;
+            align-items: center;
+            /* 上兩個，讓區塊放在畫面正中間 */
+            background: #bfc8d7;
+        }
+        .container{
+            width: 1200px;
+            display: flex;
+            margin: 0 auto;
+            flex-wrap: wrap;
+            /* 自動換行 */
+        }
+        .item{
+            width: 368px;
+            display: flex;
+            margin: 0 15px;
+            border: 1px solid #888;
+            background:#ffff;
+            box-shadow: 0 10px 30px rgba(0,0,160,0.5);
+        }
+        .item .pic{
+            width: 50%;
+            /* display: flex;
+            flex-direction: column;
+            justify-content: center; */
+            /* 這個原本是要讓比較小的圖可以放在中間位置 */
+        }
+        .item .pic img{
+            height: 100%;
+            width: 100%;
+            /* 為了讓圖片鎖定在50%裡 */
+            object-fit: cover;
+            /* 指定元素內容去適應容器的高度寬度 */
+        }
+        .item .txt{
+            width: 50%;
+            padding: 15px;
+            box-sizing: border-box;
+            /* 自動計算扣除 border 或 padding 所剩餘的空間 */
+            display: flex;
+            flex-direction: column;
+            /* justify-content: center; */
+            /* 上面這個只要遇到內容高度不同就會無法對齊
+                所以不要用垂直居中。*/
+        }
+        .item .txt h1{
+            font-size: 20px;
+            margin-bottom: .4em;
+        }
+        .item .txt p{
+            font-size: 15px;
+        }
+        .item .txt .btn{
+            line-height: 1.5em;
+            border: 1px solid #ccc;
+            padding: 0 1em;
+            border-radius: 200px;
+            align-self: flex-end;
+            /* 可以調整內元件次軸的對齊設定 */
+            margin-top: auto;
+            /* 重要！！！！！
+            上面因為沒有下垂直居中所以margin-top寫死數字會無法對齊，所以用auto */
+            color: #aaa;
+            text-decoration:none;
+        }
+        .item .txt .btn:hover{
+            background: #aaa;
+            color:#fff;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrap">
+        <div class="container">
+            <div class="item">
+                <div class="pic">
+                    <img src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=934&q=80" alt="">
+                </div>
+                <div class="txt">
+                    <h1>
+                        金魚都能懂的網頁入門
+                    </h1>
+                    <p>
+                        年度最佳網頁入門教學影片，輕鬆學會網頁製作，原始碼原來如此有趣啊。
+                    </p>
+                    <a href="#" class="btn">more</a>
+                </div>
+            </div>
+            <div class="item">
+                <div class="pic">
+                    <img src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=934&q=80" alt="">
+                </div>
+                <div class="txt">
+                    <h1>
+                        金魚都能懂的網頁入門
+                    </h1>
+                    <p>
+                        年度最佳網頁入門教學影片，輕鬆學會網頁製作，原始碼原來如此有趣啊。
+                        年度最佳網頁入門教學影片，輕鬆學會網頁製作，原始碼原來如此有趣啊。
+                    </p>
+                    <a href="#" class="btn">more</a>
+                </div>
+            </div>
+            <div class="item">
+                <div class="pic">
+                    <img src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=934&q=80" alt="">
+                </div>
+                <div class="txt">
+                    <h1>
+                        金魚都能懂的網頁入門
+                    </h1>
+                    <p>
+                        年度最佳網頁入門教學影片，輕鬆學會網頁製作，原始碼原來如此有趣啊。
+                        年度最佳網頁入門教學影片，輕鬆學會網頁製作，原始碼原來如此有趣啊。
+                        年度最佳網頁入門教學影片，輕鬆學會網頁製作，原始碼原來如此有趣啊。
+                    </p>
+                    <a href="#" class="btn">more</a>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+</body>
+</html>
