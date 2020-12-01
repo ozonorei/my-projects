@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/94b7d412af.js" crossorigin="anonymous"></script>
+    <title>work05</title>
+    <style type="text/css">
+    *{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+    }
+    body{
+        background: #000;
+    }
+    .main-footer{
+        padding: 100px 0 0 0;
+        background: linear-gradient(-20deg,#00DD00,#00BBFF);  
+    }
+    .main-footer .container{
+        display: flex;
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+    .item{
+        width: 0;
+        flex-grow: 1;
+        margin:0 30px;
+        }
+    .item h3{
+        font-size: 24px;
+        color: #FCFCFC;
+        border-bottom: 1px solid #FCFCFC;
+        margin-bottom: .2em;
+        padding-bottom: .2em;
+    }    
+    .item nav{
+        display: flex;
+        flex-direction: column;
+    }
+    .item nav a{
+        font-size: 14px;
+        text-decoration: none;
+        color: #FCFCFC;
+        line-height:2;
+        padding:2px 0;
+    }
+    .item nav a:hover{
+        color: #fa0;
+        font-weight: 500;
+    }
+    .footer-subs{
+        display: flex;
+        flex-direction: column;
+    }
+    .footer-subs form{
+        display: flex;
+        width: 100%;
+        margin: auto;
+    }
+    .footer-subs input[type="text"],
+    .footer-subs input[type="submit"]{
+        border: none;
+        padding: 3px 6px;
+    }
+    .footer-subs input[type="text"]{
+        width: 0;
+        flex-grow: 1;
+    }
+    .footer-subs input[type="submit"]{
+        color: #FCFCFC;
+        background: #019858;
+    }
+    .conpyright{
+        text-align: center;
+        margin: 130px 0 0 0;
+        padding: 10px;
+        background-color: 	#005AB5;
+        width: 100%;
+        color: #E0E0E0;
+    }
+    </style>
+</head>
+<body>
+    
+    <div class="main-footer">
+        <div class="container">
+            <div class="item">
+                <h3>
+                    關於我們
+                </h3>
+                <nav>
+                    <a href="#"><i class="fas fa-angle-right"></i>公司位置</a>
+                    <a href="#"><i class="fas fa-angle-right"></i>聯絡電話</a>
+                    <a href="#"><i class="fas fa-angle-right"></i>聯絡信箱</a>
+                    <a href="#"><i class="fas fa-angle-right"></i>傳真</a>
+                </nav>
+                
+            </div>
+            <div class="item">
+                <h3>
+                    服務項目
+                </h3>
+                <nav>
+                    <a href="#"><i class="fas fa-angle-right"></i>專車運送</a>
+                    <a href="#"><i class="fas fa-angle-right"></i>當日快遞</a>
+                    <a href="#"><i class="fas fa-angle-right"></i>空運報關</a>
+                    <a href="#"><i class="fas fa-angle-right"></i>海運報關</a>
+                </nav>
+            </div>
+            <div class="item">
+                <h3>
+                    費用計算方式
+                </h3>
+                <nav>
+                <a href="#"><i class="fas fa-angle-right"></i>材積計算方式</a>
+                <a href="#"><i class="fas fa-angle-right"></i>重量計算方式</a>
+                <a href="#"><i class="fas fa-angle-right"></i>距離計算方式</a>
+                <a href="#"><i class="fas fa-angle-right"></i>特殊服務</a>
+                </nav>
+            </div>
+            <div class="item footer-subs">
+                <h3>
+                    聯絡我們
+                </h3>
+                <form>
+                    <input id="email" type="text" placeholder="請輸入e-mail帳號">
+                    <input type="submit" value="送出">
+                </form>
+            </div>
+        </div>
+        <div class="conpyright">
+            2020 &copy;柚子國際有限公司
+        </div>
+    </div>
+
+</body>
+</html>
