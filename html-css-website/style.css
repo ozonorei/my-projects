@@ -541,6 +541,11 @@
     font-size: 24px;
 }
 
+.social__icon--link:hover {
+    color: #4837ff;
+    transition: all .35s;
+}
+
 .social__media {
     max-width: 1000px;
     width: 100%;
